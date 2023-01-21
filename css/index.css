@@ -1,0 +1,616 @@
+/*Estilos generales*/
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #171717;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Estilos del header*/
+header{
+    margin-top: 0;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+}
+
+header ul{
+    display: flex;
+    gap: 45px;
+    margin-left: 50%;
+}
+
+header ul li a{
+    padding: 5px 25px;
+    font-size: 22px;
+}
+
+
+header ul li:hover{
+    background-color: #1717175c;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+header ul li a:hover{
+    color: #F8FC78;
+}
+
+/*Estilos generales de las listas*/
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+/*Estilos de los enlaces*/
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*Estilo del aside*/
+aside{
+    float: left;   
+    width: 15%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#go{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+}
+
+#go span{
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+#go p{
+    margin-top: 25px;
+    font-size: 15px;
+    color: #F8FC78;
+}
+
+#icons_social{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #171717;
+}
+
+
+#icons_social span{
+    font-size: 10px;
+    transform: rotate(-90deg);
+    letter-spacing: 2px;
+}
+
+#icons_social ul{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 150px;
+    margin-left: 13px;
+}
+
+#icons_social ul li i:hover{
+    color: #F8FC78;
+}
+
+#icons_social ul li a{
+    font-size: 10px;
+}
+
+/*Estilos del home*/
+#home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/portada.jpg);
+    background-position: 35% 35%;
+}
+
+#home h1, #home p, #home button{
+    display: inline-block;
+}
+
+#home h1{
+    margin-top: 15%;
+    margin-left: 6%;
+    font-size: 40px;
+    letter-spacing: 12px;
+}
+
+#home p{
+    width: 390px;
+    margin-top: 10px;
+    margin-left: 33.5%;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+#home button{
+    display: block;
+    margin-top: 20px;
+    margin-left: 63%;
+    background-color: rgba(255, 0, 93, 0.989);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 45px;
+}
+
+#home button:hover{
+    cursor: pointer;
+    background-color: #f8fc7816;
+}
+
+button i{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+/*Estilos generales de las secciones*/
+.section{
+    width: 100%;
+}
+
+h3{
+    letter-spacing: 5px;
+}
+
+h3 span{
+    color: #F8FC78;
+}
+
+/*Estilos de la seccion about us*/
+#about_us h3{
+    font-size: 28px;
+    text-align: center;
+    padding: 60px 0; 
+}
+
+#about_us article{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 30px 0;
+    gap: 125px;
+}
+
+#aboutAbs{
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    font-size: 95px;
+    letter-spacing: 10px;
+    opacity: 0.025;
+    z-index: -1;
+}
+
+article div{
+    width: 220px;
+    height: 300px;
+    padding: 10px;
+    text-align: left;
+}
+
+article img{
+    width: 250px;
+    height: 280px;
+    overflow: hidden;
+}
+
+article img:hover{
+    box-shadow: 10px 10px 23px 0px rgba(255, 187, 0, 0.025);
+}
+
+h5{
+    letter-spacing: 3px;  
+}
+
+#ideas h5{
+    font-size: 18px;
+}
+
+#ideas p{
+    margin-top: 35px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+#specialization{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#specialization h5{
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#specialization span{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#specialization i{
+    color: #f8fc78a7;
+}
+
+/*Estilos de la seccion our projects*/
+#projects h3{
+    font-size: 28px;
+    text-align: center;
+    margin: 60px 0; 
+}
+
+#projects article{
+    display: flex;
+    flex-direction: row;
+}
+
+#projects article div{
+    width: 25%;
+    position: relative;
+    height: 500px;
+    filter: opacity(.75);
+}
+
+#projects article div:hover{
+    cursor: pointer;
+    filter: opacity(.9);
+}
+
+#projects article div h7{
+    position: absolute;
+    font-size: 15px;
+    top: 25px;
+    left: 25px;
+    letter-spacing: 2px;
+}
+
+#projects article div span{
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 12px;
+    top: 80%;
+    left: -15px;
+    letter-spacing: 2px;
+}
+
+#projects article div:first-child{
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#projects article div:nth-child(2){
+    background-image: url(../img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#projects article div:nth-child(3){
+    background-image: url(../img/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#projects article div:last-child{
+    background-image: url(../img/img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+footer span{
+    padding: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+footer span a{
+    color: #F8FC78;
+}
+
+/*Estilos para tablets*/
+@media screen and (max-width: 768px){
+    header ul{
+        gap: 5px;
+        padding: 5px;
+    }
+
+    header ul li a{
+        font-size: 15px;
+    }
+
+    /*Estilo del aside*/
+    aside{
+        width: 25%;
+    }
+
+    #go span{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    #go p{
+        font-size: 12px;
+    }
+
+    #icons_social span{
+        font-size: 8px;
+    }
+
+    #icons_social ul{
+        margin-left: 4px;
+    }
+
+    #icons_social ul li a{
+        font-size: 8px;
+    }
+    
+    /*Estilos del home*/
+    #home{
+        background-position: 38% 5%;
+    }
+
+    #home h1{
+        margin-top: 280px;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    
+    #home p{
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 105px;
+    }
+    
+    #home button{
+        margin-top: 20px;
+        margin-left: 514px;
+        font-size: 12px;
+        padding: 12px 28px;
+    }
+    
+    button i{
+        font-size: 15px;
+        margin-left: 35px;
+    }
+    
+    /*Estilos de la seccion about us*/
+    #about_us article{
+        gap: 15px;
+    }
+
+    #aboutAbs{
+        top: 6%;
+        left: 1%;
+        font-size: 75px;
+        letter-spacing: 10px;
+    }
+
+    article div{
+        width: 185px;
+        height: 300px;
+        padding: 3px;
+    }
+
+    article img{
+        width: 200px;
+        height: 250px;
+    }
+    
+    /*Estilos del footer*/
+    footer span{
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}
+
+/*Medidas par celular*/
+
+@media screen and (max-width: 480px){
+    header ul{
+        margin-left: 170px;
+        gap: 5px;
+    }
+
+    header ul li a{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    /*Estilo del aside*/
+    aside{
+        width: 30%;
+    }
+
+    #go span{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    #go p{
+        font-size: 12px;
+    }
+
+    #icons_social{
+        width: 70%;
+    }
+
+    #icons_social span{
+        width: 110px;
+        margin-left: -15px;
+        font-size: 7.5px;
+        letter-spacing: 3px;
+    }
+
+    #icons_social ul{
+        margin-left:-2px;
+    }
+
+    #icons_social ul li a{
+        font-size: 7px;
+    }
+    
+    /*Estilos del home*/
+    #home{
+        background-position: 40% 0%;
+    }
+
+    #home h1{
+        margin-top: 275px;
+        margin-left: 0px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    #home p{
+        width: 160px;
+        font-size: 12px;
+        margin-left: 95px;
+    }
+    
+    #home button{
+        margin-top: 20px;
+        margin-left: 280px;
+        font-size: 8px;
+        padding: 10px 22px;
+    }
+    
+    button i{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    
+    /*Estilos de la seccion about us*/
+    
+    #about_us article{
+        gap: 55px;
+        flex-direction: column;
+    }
+
+    #aboutAbs{
+        top: 2%;
+        left: 1%;
+    }
+
+    article div{
+        width: 225px;
+    }
+
+    article img{
+        width: 250px;
+    }
+
+    /*Estilos de la seccion our projects*/
+    #projects article{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #projects article div{
+        width: 95%;
+        height: 600px;
+    }
+
+    /*Estilos del footer*/
+    footer span{
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+}
+
+
+/*Medidas par celular*/
+
+@media only screen and (min-width: 340px) and (max-width: 425px){
+    header ul{
+        margin-left: 30%;
+        gap: 2px;
+    }
+
+    /*Estilo del aside*/
+    aside{
+        width: 32%;
+    }
+
+    #icons_social ul{
+        margin-left:-9px;
+    }
+
+    #icons_social ul li a{
+        font-size: 9px;
+    }
+    
+    /*Estilos del home*/
+    #home{
+        background-position: 39% 0%;
+    }
+
+    #home h1{
+        margin-top: 275px;
+        margin-left: -5px;
+        font-size: 12px;
+    }
+    
+    #home p{
+        width: 110px;
+        font-size: 11px;
+    }
+    
+    #home button{
+        margin-left: 230px;
+        font-size: 7px;
+    }
+    
+    button i{
+        font-size: 10px;
+    }
+    
+    /*Estilos de la seccion about us*/
+
+    article div{
+        width: 220px;
+    }
+
+    article img{
+        width: 240px;
+    }
+
+    footer span{
+        font-size: 8px;
+    }
+
+
+}
