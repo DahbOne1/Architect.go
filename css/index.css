@@ -13,15 +13,19 @@ body{
 header{
     margin-top: 0;
     width: 100%;
-    background-color: transparent;
     position: fixed;
     z-index: 100;
+    height: 8vh;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 header ul{
     display: flex;
     gap: 45px;
-    margin-left: 50%;
+    margin-right: 50px;
 }
 
 header ul li a{
@@ -30,14 +34,9 @@ header ul li a{
 }
 
 
-header ul li:hover{
-    background-color: #1717175c;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
 header ul li a:hover{
     color: #F8FC78;
+    cursor: pointer;
 }
 
 /*Estilos generales de las listas*/
@@ -51,7 +50,6 @@ a{
     text-decoration: none;
     color: #ffffff;
 }
-
 
 /*Estilo del aside*/
 aside{
@@ -85,14 +83,13 @@ aside{
 }
 
 #icons_social{
-    width: 50%;
+    width: 65%;
     height: 70%;
     display: flex;
     flex-direction: column;
     color: #ffffff;
     background-color: #171717;
 }
-
 
 #icons_social span{
     font-size: 10px;
@@ -124,36 +121,37 @@ aside{
     background-position: 35% 35%;
 }
 
-#home h1, #home p, #home button{
-    display: inline-block;
+#home article{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 #home h1{
-    margin-top: 15%;
-    margin-left: 6%;
     font-size: 40px;
-    letter-spacing: 12px;
+    letter-spacing: 10px;
+    text-align: right;
 }
 
 #home p{
     width: 390px;
-    margin-top: 10px;
-    margin-left: 33.5%;
     font-size: 15px;
     text-align: right;
     letter-spacing: 2px;
+    margin-top: 15px;
 }
 
 #home button{
-    display: block;
-    margin-top: 20px;
-    margin-left: 63%;
     background-color: rgba(255, 0, 93, 0.989);
     color: #ffffff;
     font-size: 12px;
     padding: 15px 35px;
     border: none;
     border-radius: 45px;
+    margin-top: 8px;
 }
 
 #home button:hover{
@@ -278,7 +276,6 @@ h5{
 }
 
 #projects article div:hover{
-    cursor: pointer;
     filter: opacity(.9);
 }
 
@@ -369,7 +366,8 @@ footer span a{
     }
 
     #icons_social ul{
-        margin-left: 4px;
+        margin-left: 6px;
+        margin-top: 100px;
     }
 
     #icons_social ul li a{
@@ -382,27 +380,22 @@ footer span a{
     }
 
     #home h1{
-        margin-top: 280px;
         font-size: 25px;
         letter-spacing: 5px;
     }
     
     #home p{
         font-size: 12px;
-        margin-top: 10px;
-        margin-left: 105px;
     }
     
     #home button{
-        margin-top: 20px;
-        margin-left: 514px;
         font-size: 12px;
-        padding: 12px 28px;
+        padding: 12px 15px;
     }
     
     button i{
         font-size: 15px;
-        margin-left: 35px;
+        margin-left: 8px;
     }
     
     /*Estilos de la seccion about us*/
@@ -427,6 +420,11 @@ footer span a{
         width: 200px;
         height: 250px;
     }
+
+    /*Estilos de la seccion de galeria*/
+    #projects article div{
+        height: 450px;
+    }
     
     /*Estilos del footer*/
     footer span{
@@ -437,10 +435,10 @@ footer span a{
 
 /*Medidas par celular*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 426px){
+
     header ul{
-        margin-left: 170px;
-        gap: 5px;
+        margin-right: 10px;
     }
 
     header ul li a{
@@ -450,20 +448,7 @@ footer span a{
 
     /*Estilo del aside*/
     aside{
-        width: 30%;
-    }
-
-    #go span{
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    #go p{
-        font-size: 12px;
-    }
-
-    #icons_social{
-        width: 70%;
+        width: 32%;
     }
 
     #icons_social span{
@@ -480,39 +465,36 @@ footer span a{
     #icons_social ul li a{
         font-size: 7px;
     }
+
     
     /*Estilos del home*/
     #home{
-        background-position: 40% 0%;
+        background-position: 39% 0%;
+    }
+
+    #home article{
+        width: 60%;
+        height: 80%;
     }
 
     #home h1{
-        margin-top: 275px;
-        margin-left: 0px;
-        font-size: 16px;
-        letter-spacing: 2px;
+        font-size: 26px;
     }
     
     #home p{
-        width: 160px;
-        font-size: 12px;
-        margin-left: 95px;
+        width: 180px;
+        font-size: 11px;
     }
     
     #home button{
-        margin-top: 20px;
-        margin-left: 280px;
-        font-size: 8px;
-        padding: 10px 22px;
+        font-size: 7px;
     }
     
     button i{
-        font-size: 15px;
-        margin-left: 15px;
+        font-size: 10px;
     }
-    
+
     /*Estilos de la seccion about us*/
-    
     #about_us article{
         gap: 55px;
         flex-direction: column;
@@ -520,7 +502,7 @@ footer span a{
 
     #aboutAbs{
         top: 2%;
-        left: 1%;
+        left: 3%;
     }
 
     article div{
@@ -530,16 +512,17 @@ footer span a{
     article img{
         width: 250px;
     }
-
+    
     /*Estilos de la seccion our projects*/
     #projects article{
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
     
     #projects article div{
-        width: 95%;
-        height: 600px;
+        width: 72%;
+        height: 420px;
     }
 
     /*Estilos del footer*/
@@ -549,68 +532,20 @@ footer span a{
         text-align: center;
     }
 
+
 }
 
-
-/*Medidas par celular*/
-
-@media only screen and (min-width: 340px) and (max-width: 425px){
-    header ul{
-        margin-left: 30%;
-        gap: 2px;
-    }
-
-    /*Estilo del aside*/
-    aside{
-        width: 32%;
-    }
-
-    #icons_social ul{
-        margin-left:-9px;
-    }
-
-    #icons_social ul li a{
-        font-size: 9px;
-    }
-    
-    /*Estilos del home*/
-    #home{
-        background-position: 39% 0%;
+@media screen and (max-width: 320px){ 
+    #home article{
+        width: 62%;
+        height: 85%;
     }
 
     #home h1{
-        margin-top: 275px;
-        margin-left: -5px;
-        font-size: 12px;
-    }
-    
-    #home p{
-        width: 110px;
-        font-size: 11px;
-    }
-    
-    #home button{
-        margin-left: 230px;
-        font-size: 7px;
-    }
-    
-    button i{
-        font-size: 10px;
-    }
-    
-    /*Estilos de la seccion about us*/
-
-    article div{
-        width: 220px;
+        font-size: 24px;
     }
 
-    article img{
-        width: 240px;
+    #projects article div{
+        width: 80%;
     }
-
-    footer span{
-        font-size: 8px;
-    }
-
-
 }
