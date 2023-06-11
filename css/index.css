@@ -7,6 +7,7 @@ body{
     background-color: #171717;
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
+    font-size: 10px;
 }
 
 /*Estilos del header*/
@@ -18,21 +19,20 @@ header{
     height: 8vh;
     background-color: #171717;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
 }
 
 header ul{
     display: flex;
     gap: 45px;
-    margin-right: 50px;
+    margin-left: 40px;
 }
 
 header ul li a{
     padding: 5px 25px;
-    font-size: 22px;
+    font-size: 1.8rem;
 }
-
 
 header ul li a:hover{
     color: #F8FC78;
@@ -72,13 +72,13 @@ aside{
 }
 
 #go span{
-    font-size: 25px;
+    font-size: 2.2rem;
     letter-spacing: 5px;
 }
 
 #go p{
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 1.6rem;
     color: #F8FC78;
 }
 
@@ -87,30 +87,30 @@ aside{
     height: 70%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
     color: #ffffff;
     background-color: #171717;
 }
 
 #icons_social span{
-    font-size: 10px;
+    display: block;
+    font-size: .9rem;
     transform: rotate(-90deg);
     letter-spacing: 2px;
 }
 
 #icons_social ul{
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    margin-top: 150px;
-    margin-left: 13px;
+    margin-right: 20px;
 }
 
 #icons_social ul li i:hover{
     color: #F8FC78;
 }
 
-#icons_social ul li a{
-    font-size: 10px;
+#icons_social ul li i{
+    font-size: 1.5rem;
+    margin: 18px 0;
 }
 
 /*Estilos del home*/
@@ -118,12 +118,12 @@ aside{
     height: 100vh;
     width: 100%;
     background-image: url(../img/portada.jpg);
-    background-position: 35% 35%;
+    background-position: 35% 0%;
 }
 
 #home article{
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -131,14 +131,14 @@ aside{
 }
 
 #home h1{
-    font-size: 40px;
+    font-size: 3.8em;
     letter-spacing: 10px;
     text-align: right;
 }
 
 #home p{
-    width: 390px;
-    font-size: 15px;
+    width: 60%;
+    font-size: 2em;
     text-align: right;
     letter-spacing: 2px;
     margin-top: 15px;
@@ -147,20 +147,23 @@ aside{
 #home button{
     background-color: rgba(255, 0, 93, 0.989);
     color: #ffffff;
-    font-size: 12px;
+    font-size: 1.5em;
     padding: 15px 35px;
-    border: none;
+    border: 1px solid rgba(255, 0, 93, 0);
     border-radius: 45px;
-    margin-top: 8px;
+    margin-top: 18px;
+    transition: background 2s, border 2s;
+
 }
 
 #home button:hover{
     cursor: pointer;
     background-color: #f8fc7816;
+    border: 1px solid rgba(255, 0, 93, 0.989);
 }
 
 button i{
-    font-size: 15px;
+    font-size: 1em;
     margin-left: 15px;
 }
 
@@ -178,59 +181,57 @@ h3 span{
 }
 
 /*Estilos de la seccion about us*/
+#about_us{
+    padding-top: 100px;
+}
+
 #about_us h3{
-    font-size: 28px;
+    font-size: 3.2em;
     text-align: center;
-    padding: 60px 0; 
 }
 
 #about_us article{
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0 30px 0;
-    gap: 125px;
+    align-items: flex-start;
+    justify-content:space-around;
+    margin-top: 50px;
 }
 
 #aboutAbs{
     position: absolute;
-    top: 6%;
+    top: 80%;
     left: 8%;
-    font-size: 95px;
+    font-size: 8em;
     letter-spacing: 10px;
-    opacity: 0.025;
+    opacity: 0.060;
     z-index: -1;
 }
 
-article div{
-    width: 220px;
-    height: 300px;
+#about_us article div{
+    width: 20%;
+    height: 40vh;
     padding: 10px;
     text-align: left;
 }
 
-article img{
-    width: 250px;
-    height: 280px;
+#about_us img{
+    width: 20%;
+    height: 40vh;
     overflow: hidden;
 }
 
-article img:hover{
-    box-shadow: 10px 10px 23px 0px rgba(255, 187, 0, 0.025);
-}
-
 h5{
-    letter-spacing: 3px;  
+    letter-spacing: 2.8px;  
 }
 
 #ideas h5{
-    font-size: 18px;
+    font-size: 2em;
 }
 
 #ideas p{
     margin-top: 35px;
-    font-size: 15px;
+    font-size: 1.5em;
     text-align: left;
     letter-spacing: 2px;
 }
@@ -244,23 +245,25 @@ h5{
 
 #specialization h5{
     margin-top: 0;
-    font-size: 18px;
+    font-size: 1.8em;
 }
 
 #specialization span{
-    font-size: 12px;
+    font-size: 1.4em;
     letter-spacing: 2px;
 }
 
 #specialization i{
     color: #f8fc78a7;
+    font-size: 2em;
 }
 
 /*Estilos de la seccion our projects*/
 #projects h3{
-    font-size: 28px;
+    font-size: 3.2em;
     text-align: center;
-    margin: 60px 0; 
+    margin: 60px 0;
+    padding-top: 70px; 
 }
 
 #projects article{
@@ -271,8 +274,10 @@ h5{
 #projects article div{
     width: 25%;
     position: relative;
-    height: 500px;
+    height: 78vh;
     filter: opacity(.75);
+    background-position: center;
+    background-size: cover;
 }
 
 #projects article div:hover{
@@ -281,7 +286,7 @@ h5{
 
 #projects article div h7{
     position: absolute;
-    font-size: 15px;
+    font-size: 1.5em;
     top: 25px;
     left: 25px;
     letter-spacing: 2px;
@@ -290,7 +295,7 @@ h5{
 #projects article div span{
     position: absolute;
     transform: rotate(-90deg);
-    font-size: 12px;
+    font-size: 1.2em;
     top: 80%;
     left: -15px;
     letter-spacing: 2px;
@@ -298,37 +303,29 @@ h5{
 
 #projects article div:first-child{
     background-image: url(../img/img1.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 #projects article div:nth-child(2){
     background-image: url(../img/img2.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 #projects article div:nth-child(3){
     background-image: url(../img/img3.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 #projects article div:last-child{
     background-image: url(../img/img4.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 footer{
     display: flex;
     place-items: center;
     justify-content: center;
+    font-size: 2em;
 }
 
 footer span{
     padding: 20px;
-    font-size: 15px;
     letter-spacing: 2px;
 }
 
@@ -336,16 +333,53 @@ footer span a{
     color: #F8FC78;
 }
 
-/*Estilos para tablets*/
-@media screen and (max-width: 768px){
-    header ul{
-        gap: 5px;
-        padding: 5px;
+/*Estilos para computadoras medianas*/
+@media screen and (max-width: 1280px){
+    /*Estilos del header*/
+    header ul li a{
+        font-size: 2.2em;
     }
 
-    header ul li a{
-        font-size: 15px;
+    #go span{
+        font-size: 3em;
     }
+    
+    #go p{
+        font-size: 1.2rem;
+    }
+
+    #home h1{
+        font-size: 3.2em;
+    }
+    
+    #home p{
+        font-size: 1.8em;
+    }
+    
+    #home button{
+        font-size: 1.2em;
+    }
+
+    #icons_social span{
+        font-size: 1.2em;
+    }
+    
+    #icons_social ul li i{
+        font-size: 2em;
+    }
+
+    footer{
+        font-size: 1.5em;
+    }
+    
+}
+
+/*Estilos para tablets*/
+@media screen and (max-width: 768px){
+    header ul li a{
+        padding: 5px 15px;
+        font-size: 1.4rem;
+    }    
 
     /*Estilo del aside*/
     aside{
@@ -353,97 +387,80 @@ footer span a{
     }
 
     #go span{
-        font-size: 20px;
+        font-size: 2em;
         letter-spacing: 2px;
     }
 
     #go p{
-        font-size: 12px;
+        font-size: 1.2em;
     }
 
-    #icons_social span{
-        font-size: 8px;
-    }
-
-    #icons_social ul{
-        margin-left: 6px;
-        margin-top: 100px;
-    }
-
-    #icons_social ul li a{
-        font-size: 8px;
-    }
     
     /*Estilos del home*/
     #home{
-        background-position: 38% 5%;
+        background-position: 38% 0%;
+    }
+
+    #home article{
+        width: 70%;
+        height: 70%;
     }
 
     #home h1{
-        font-size: 25px;
-        letter-spacing: 5px;
+        font-size: 3em;
+        letter-spacing: 2px;
     }
     
     #home p{
-        font-size: 12px;
+        font-size: 1.4em;
     }
     
     #home button{
-        font-size: 12px;
+        font-size: 1em;
         padding: 12px 15px;
     }
     
     button i{
-        font-size: 15px;
+        font-size: 1em;
         margin-left: 8px;
     }
-    
+   
     /*Estilos de la seccion about us*/
-    #about_us article{
-        gap: 15px;
-    }
-
     #aboutAbs{
-        top: 6%;
-        left: 1%;
-        font-size: 75px;
+        font-size: 5em;
         letter-spacing: 10px;
     }
 
-    article div{
-        width: 185px;
-        height: 300px;
-        padding: 3px;
+    #specialization h5{
+        font-size: 1.5em;
     }
 
-    article img{
-        width: 200px;
-        height: 250px;
+    #ideas h5{
+        font-size: 1.5em;
     }
 
-    /*Estilos de la seccion de galeria*/
-    #projects article div{
-        height: 450px;
+    #ideas p{
+        font-size: 1em;
     }
-    
+
     /*Estilos del footer*/
     footer span{
-        font-size: 9px;
-        letter-spacing: 2px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    /*Estilos del header*/    
+    header ul li a{
+        font-size: 1.7em;
     }
 }
 
 /*Medidas par celular*/
-
 @media screen and (max-width: 426px){
-
+     /*Estilos del header*/
     header ul{
-        margin-right: 10px;
-    }
-
-    header ul li a{
-        font-size: 15px;
-        padding: 5px 10px;
+        gap: 5px;
     }
 
     /*Estilo del aside*/
@@ -452,21 +469,16 @@ footer span a{
     }
 
     #icons_social span{
-        width: 110px;
-        margin-left: -15px;
-        font-size: 7.5px;
+        width: 140px;
+        font-size: 1em;
         letter-spacing: 3px;
     }
 
-    #icons_social ul{
-        margin-left:-2px;
+    #icons_social ul li i{
+        font-size: 1.8em;
     }
 
-    #icons_social ul li a{
-        font-size: 7px;
-    }
 
-    
     /*Estilos del home*/
     #home{
         background-position: 39% 0%;
@@ -474,30 +486,31 @@ footer span a{
 
     #home article{
         width: 60%;
-        height: 80%;
+        height: 60%;
     }
 
     #home h1{
-        font-size: 26px;
+        font-size: 2.8em;
     }
     
     #home p{
-        width: 180px;
-        font-size: 11px;
+        width: 200px;
+        font-size: 1.2em;
     }
     
     #home button{
-        font-size: 7px;
+        font-size: 1em;
     }
     
     button i{
-        font-size: 10px;
+        font-size: 1.2em;
     }
 
     /*Estilos de la seccion about us*/
     #about_us article{
-        gap: 55px;
+        gap: 10px;
         flex-direction: column;
+        align-items: center;
     }
 
     #aboutAbs{
@@ -505,12 +518,25 @@ footer span a{
         left: 3%;
     }
 
-    article div{
-        width: 225px;
+    #about_us article div{
+        width: 70%;
+        height: 50vh;
     }
 
-    article img{
-        width: 250px;
+    #about_us article img{
+        width: 70%;
+    }
+
+    #specialization h5{
+        font-size: 2em;
+    }
+
+    #ideas h5{
+        font-size: 2em;
+    }
+
+    #ideas p{
+        font-size: 1.5em;
     }
     
     /*Estilos de la seccion our projects*/
@@ -521,13 +547,13 @@ footer span a{
     }
     
     #projects article div{
-        width: 72%;
-        height: 420px;
+        width: 80%;
+        height: 80vh;
     }
 
     /*Estilos del footer*/
     footer span{
-        font-size: 12px;
+        font-size: 1em;
         letter-spacing: 2px;
         text-align: center;
     }
@@ -535,14 +561,42 @@ footer span a{
 
 }
 
-@media screen and (max-width: 320px){ 
+@media screen and (max-width: 320px){
+    /*Estilos del header*/
+    header ul{
+        gap: 2px;
+    }
+
+    header ul li a{
+        font-size: 1.5em;
+    }
+    
+    #go p{
+        font-size: 1.2em;
+    }
+
+    #home h1{
+        font-size: 2em;
+    }
+    
+    #home p{
+        font-size: 1em;
+    }
+    
+    #home button{
+        font-size: .8em;
+    }
+ 
     #home article{
         width: 62%;
-        height: 85%;
     }
 
     #home h1{
         font-size: 24px;
+    }
+
+    #about_us article div{
+        width: 80%;
     }
 
     #projects article div{
